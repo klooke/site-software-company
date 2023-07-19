@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  text-decoration: none;
+}
+
+header,
+footer,
+#contact {
+  background-color: lightblue;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > nav a {
+    margin: 0 10px;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  > input,
+  textarea {
+    padding: 1%;
+  }
+
+  > button {
+    height: 32px;
+    background-color: black;
+    color: white;
+  }
+
+  > button:hover {
+    opacity: 75%;
+    cursor: pointer;
+  }
+}
+
+.container {
+  max-width: 1360px;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.block-order {
+  display: flex;
+  max-width: 49%;
+  background-color: lightgray;
+  border: 1px solid #ffffff55;
+  border-radius: 4px;
+  position: relative;
+  margin-bottom: 2%;
+  align-items: center;
+
+  > * {
+    margin: 24px;
+  }
+
+  > h4 {
+    position: absolute;
+    top: -18px;
+    left: -18px;
+  }
+}
+
+.list-links {
+  display: flex;
+
+  > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > a img {
+    max-width: 32px;
+  }
+}
+
+#about .container {
+  display: flex;
+  justify-content: space-between;
+
+  > * {
+    max-width: 49%;
+  }
+
+  .content * {
+    margin-bottom: 1%;
+  }
+
+  #partners {
+    justify-content: space-between;
+  }
+
+  #partners img {
+    max-width: 100px;
+  }
+}
+
+#diff .content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1%;
+  justify-content: space-between;
+}
+
+#depo .content {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  margin: 1% 0;
+
+  > div {
+    display: flex;
+    min-width: 100%;
+    background-color: lightblue;
+    border: 1px solid #ffffff55;
+    border-radius: 4px;
+    margin-right: 2%;
+    padding: 2%;
+    align-items: center;
+  }
+
+  > div:first-child {
+    animation: move-left 15s step-end infinite;
+  }
+}
+
+#contact .content {
+  display: flex;
+  justify-content: space-between;
+
+  > div {
+    width: 33%;
+  }
+
+  > div * {
+    margin: 2%;
+  }
+}
+
+#contac-us {
+  > a {
+    width: 40%;
+  }
+
+  > a img {
+    max-width: 24px;
+  }
+}
+
+#follow-us a img {
+  max-width: 48px;
+}
+
+@keyframes move-left {
+  0% {
+    margin-left: 0;
+  }
+  33% {
+    margin-left: -102%;
+  }
+  66% {
+    margin-left: -204%;
+  }
+  100% {
+    margin-left: -306%;
+  }
+}
