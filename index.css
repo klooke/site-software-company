@@ -99,6 +99,7 @@ form {
 
 .list-links {
   display: flex;
+  flex-wrap: wrap;
 
   > a {
     display: flex;
@@ -124,7 +125,7 @@ form {
   }
 
   #partners {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   #partners img {
@@ -178,13 +179,14 @@ form {
   }
 }
 
-#contac-us {
+#contact-us {
   > a {
-    width: 40%;
+    font-size: small;
+    width: 45%;
   }
 
   > a img {
-    max-width: 24px;
+    max-width: 16px;
   }
 }
 
@@ -204,5 +206,84 @@ form {
   }
   100% {
     margin-left: -306%;
+  }
+}
+
+/* IPAD AIR */
+@media screen and (max-width: 820px) {
+  * {
+    font-size: small;
+  }
+
+  main {
+    padding-top: 30px;
+  }
+
+  #contact-us a {
+    font-size: 12px;
+  }
+}
+
+/* SURFACE DUO */
+@media screen and (max-width: 540px) {
+  img {
+    max-width: 75px;
+  }
+
+  .block-order,
+  .container {
+    max-width: 100%;
+  }
+
+  #about .container {
+    flex-direction: column;
+
+    > img,
+    .content {
+      max-width: 100%;
+    }
+
+    #partners a img {
+      max-width: 75px;
+    }
+  }
+
+  #contact-us a {
+    width: 100%;
+  }
+
+  #follow-us a img {
+    max-width: 32px;
+  }
+}
+
+/* IPHONE XR */
+@media screen and (max-width: 414px) {
+  header .container {
+    flex-direction: column;
+
+    > nav {
+      margin-top: 2%;
+    }
+  }
+
+  main {
+    padding-top: 40px;
+  }
+
+  #contact-us {
+    flex-direction: row;
+
+    > a {
+      width: 45%;
+    }
+  }
+
+  #contact .content {
+    flex-direction: column;
+
+    > div {
+      width: 100%;
+    }
   }
 }
