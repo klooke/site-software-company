@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   color: black;
+  font-family: 'Roboto', sans-serif;
   text-decoration: none;
 }
 
@@ -20,6 +21,14 @@ header .container {
   > nav a {
     margin: 0 10px;
   }
+}
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+input, p, em {
+  font-family: 'Rajdhani', sans-serif;
 }
 
 form {
@@ -132,6 +141,10 @@ form {
 
   > div:first-child {
     animation: move-left 15s step-end infinite;
+  }
+
+  > div h4 {
+    margin-bottom: 1%;
   }
 }
 
