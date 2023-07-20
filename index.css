@@ -40,6 +40,10 @@ input, p, em {
   font-family: 'Rajdhani', sans-serif;
 }
 
+a:hover {
+  opacity: 75%;
+}
+
 form {
   display: flex;
   flex-direction: column;
