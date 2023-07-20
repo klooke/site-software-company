@@ -19,10 +19,6 @@ header {
   width: 100%;
 }
 
-main {
-  padding-top: 70px;
-}
-
 header .container {
   display: flex;
   align-items: center;
@@ -33,12 +29,15 @@ header .container {
   }
 }
 
+main {
+  padding-top: 70px;
+}
+
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
 }
 
-input,
 p,
 em {
   font-family: "Rajdhani", sans-serif;
@@ -52,9 +51,13 @@ form {
   display: flex;
   flex-direction: column;
 
-  > input,
-  textarea {
+  > * {
+    resize: none;    
     padding: 1%;
+  }
+
+  > *:focus {
+    outline: none;
   }
 
   > button {
